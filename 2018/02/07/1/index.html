@@ -106,17 +106,17 @@
 
 
 
-<meta name="description" content="JavaScript 注释可用于提高代码的可读性。 JavaScript 注释JavaScript 不会执行注释。 我们可以添加注释来对 JavaScript 进行解释，或者提高代码的可读性。 单行注释以 // 开头。 例子下面的例子使用单行注释来解释代码： // 输出标题：document.getElementById(“myH1”).innerHTML=”Welcome to my Homep">
+<meta name="description" content="现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。 其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求： ... location / {     if ($http_user_agent ~* &amp;quot;p">
 <meta property="og:type" content="article">
-<meta property="og:title" content="JavaScript">
+<meta property="og:title" content="使用Nginx过滤网络爬虫">
 <meta property="og:url" content="http://yoursite.com/2018/02/07/1/index.html">
 <meta property="og:site_name" content="hzhenpeng的博客">
-<meta property="og:description" content="JavaScript 注释可用于提高代码的可读性。 JavaScript 注释JavaScript 不会执行注释。 我们可以添加注释来对 JavaScript 进行解释，或者提高代码的可读性。 单行注释以 // 开头。 例子下面的例子使用单行注释来解释代码： // 输出标题：document.getElementById(“myH1”).innerHTML=”Welcome to my Homep">
+<meta property="og:description" content="现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。 其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求： ... location / {     if ($http_user_agent ~* &amp;quot;p">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-07T03:27:22.747Z">
+<meta property="og:updated_time" content="2018-02-07T17:45:11.505Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JavaScript">
-<meta name="twitter:description" content="JavaScript 注释可用于提高代码的可读性。 JavaScript 注释JavaScript 不会执行注释。 我们可以添加注释来对 JavaScript 进行解释，或者提高代码的可读性。 单行注释以 // 开头。 例子下面的例子使用单行注释来解释代码： // 输出标题：document.getElementById(“myH1”).innerHTML=”Welcome to my Homep">
+<meta name="twitter:title" content="使用Nginx过滤网络爬虫">
+<meta name="twitter:description" content="现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。 其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求： ... location / {     if ($http_user_agent ~* &amp;quot;p">
 
 
 
@@ -152,7 +152,7 @@
 
 
 
-  <title>JavaScript | hzhenpeng的博客</title>
+  <title>使用Nginx过滤网络爬虫 | hzhenpeng的博客</title>
   
 
 
@@ -340,7 +340,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">JavaScript</h1>
+          <h1 class="post-title" itemprop="name headline">使用Nginx过滤网络爬虫</h1>
         
 
         <div class="post-meta">
@@ -370,7 +370,7 @@
 
           
           
-             <span id="/2018/02/07/1/" class="leancloud_visitors" data-flag-title="JavaScript">
+             <span id="/2018/02/07/1/" class="leancloud_visitors" data-flag-title="使用Nginx过滤网络爬虫">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -395,7 +395,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  99
+                  181
                 </span>
               
 
@@ -420,12 +420,18 @@
       
 
       
-        <p>JavaScript 注释可用于提高代码的可读性。</p>
-<p>JavaScript 注释<br>JavaScript 不会执行注释。</p>
-<p>我们可以添加注释来对 JavaScript 进行解释，或者提高代码的可读性。</p>
-<p>单行注释以 // 开头。</p>
-<p>例子<br>下面的例子使用单行注释来解释代码：</p>
-<p>// 输出标题：<br>document.getElementById(“myH1”).innerHTML=”Welcome to my Homepage”;<br>// 输出段落：<br>document.getElementById(“myP”).innerHTML=”This is my first paragraph.”;</p>
+        <p>现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。</p>
+<p>其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求：</p>
+<pre><code>...
+location / {
+    if ($http_user_agent ~* &quot;python|curl|java|wget|httpclient|okhttp&quot;) {
+        return 503;
+    }
+    # 正常处理
+    ...
+}
+...
+</code></pre><p>变量$http_user_agent是一个可以直接在location中引用的Nginx变量。~*表示不区分大小写的正则匹配，通过python就可以过滤掉80%的Python爬虫。</p>
 
       
     </div>
@@ -443,11 +449,11 @@
   <script type="text/javascript" src="http://jslibs.wuxubj.cn/sweetalert_mini/jquery-1.7.1.min.js"></script>
   <script src="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.min.js"></script>
   <link rel="stylesheet" type="text/css" href="http://jslibs.wuxubj.cn/sweetalert_mini/sweetalert.mini.css">
-  <p><span>本文标题:</span><a href="/2018/02/07/1/">JavaScript</a></p>
+  <p><span>本文标题:</span><a href="/2018/02/07/1/">使用Nginx过滤网络爬虫</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 hzhenpeng 的个人博客">hzhenpeng</a></p>
   <p><span>发布时间:</span>2018年02月07日 - 11:02</p>
-  <p><span>最后更新:</span>2018年02月07日 - 11:02</p>
-  <p><span>原始链接:</span><a href="/2018/02/07/1/" title="JavaScript">http://yoursite.com/2018/02/07/1/</a>
+  <p><span>最后更新:</span>2018年02月08日 - 01:02</p>
+  <p><span>原始链接:</span><a href="/2018/02/07/1/" title="使用Nginx过滤网络爬虫">http://yoursite.com/2018/02/07/1/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/02/07/1/"  aria-label="复制成功！"></i></span>
   </p>
   <p><span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank" title="Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)">署名-非商业性使用-禁止演绎 4.0 国际</a> 转载请保留原文链接及作者。</p>
@@ -535,7 +541,7 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/02/07/hello-world/" rel="prev" title="Hello World">
+              <a href="/2018/02/08/hello-world/" rel="prev" title="Hello World">
                 Hello World <i class="fa fa-chevron-right"></i>
               </a>
             
@@ -760,7 +766,7 @@ var jiathis_config={
 |
 <div class="theme-info">
   <div class="powered-by"></div>
-  <span class="post-count">博客全站共183字</span>
+  <span class="post-count">博客全站共265字</span>
 </div>
 
 <!--
