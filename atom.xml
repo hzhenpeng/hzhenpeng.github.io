@@ -45,17 +45,13 @@
     <link href="http://yoursite.com/2018/02/07/1/"/>
     <id>http://yoursite.com/2018/02/07/1/</id>
     <published>2018-02-07T03:24:10.000Z</published>
-    <updated>2018-02-07T17:45:11.505Z</updated>
+    <updated>2018-02-07T17:46:53.317Z</updated>
     
-    <content type="html"><![CDATA[<p>现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。</p><p>其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求：</p><pre><code>...location / {    if ($http_user_agent ~* &quot;python|curl|java|wget|httpclient|okhttp&quot;) {        return 503;    }    # 正常处理    ...}...</code></pre><p>变量$http_user_agent是一个可以直接在location中引用的Nginx变量。~*表示不区分大小写的正则匹配，通过python就可以过滤掉80%的Python爬虫。</p>]]></content>
+    <content type="html"><![CDATA[<p>现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。<br><a id="more"></a><br>其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求：</p><pre><code>...location / {    if ($http_user_agent ~* &quot;python|curl|java|wget|httpclient|okhttp&quot;) {        return 503;    }    # 正常处理    ...}...</code></pre><p>变量$http_user_agent是一个可以直接在location中引用的Nginx变量。~*表示不区分大小写的正则匹配，通过python就可以过滤掉80%的Python爬虫。</p>]]></content>
     
     <summary type="html">
     
-      
-      
-        &lt;p&gt;现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。&lt;/p&gt;
-&lt;p&gt;其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达
-      
+      &lt;p&gt;现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。&lt;br&gt;
     
     </summary>
     

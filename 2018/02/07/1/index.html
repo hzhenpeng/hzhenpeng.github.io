@@ -106,17 +106,17 @@
 
 
 
-<meta name="description" content="现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。 其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求： ... location / {     if ($http_user_agent ~* &amp;quot;p">
+<meta name="description" content="现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="使用Nginx过滤网络爬虫">
 <meta property="og:url" content="http://yoursite.com/2018/02/07/1/index.html">
 <meta property="og:site_name" content="hzhenpeng的博客">
-<meta property="og:description" content="现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。 其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求： ... location / {     if ($http_user_agent ~* &amp;quot;p">
+<meta property="og:description" content="现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-07T17:45:11.505Z">
+<meta property="og:updated_time" content="2018-02-07T17:46:53.317Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Nginx过滤网络爬虫">
-<meta name="twitter:description" content="现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。 其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求： ... location / {     if ($http_user_agent ~* &amp;quot;p">
+<meta name="twitter:description" content="现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。">
 
 
 
@@ -420,8 +420,7 @@
       
 
       
-        <p>现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。</p>
-<p>其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求：</p>
+        <p>现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。<br><a id="more"></a><br>其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求：</p>
 <pre><code>...
 location / {
     if ($http_user_agent ~* &quot;python|curl|java|wget|httpclient|okhttp&quot;) {
