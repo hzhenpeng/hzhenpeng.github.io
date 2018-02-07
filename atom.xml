@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>hzhenpeng的博客</title>
+  <icon>https://www.gravatar.com/avatar/5c6635deae2f33d90a0640393f70ca7e</icon>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2018-02-07T03:27:22.680Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>hzhenpeng</name>
+    <email>hzp18813756457@139.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Hello World</title>
+    <link href="http://yoursite.com/2018/02/07/hello-world/"/>
+    <id>http://yoursite.com/2018/02/07/hello-world/</id>
+    <published>2018-02-07T03:27:22.679Z</published>
+    <updated>2018-02-07T03:27:22.680Z</updated>
+    
+    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on [GitHub]<a id="more"></a>(<a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">https://github.com/hexojs/hexo/issues</a>).</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.io/docs/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;documentation&lt;/a&gt; for more info. If you get any problems when using Hexo, you can find the answer in &lt;a href=&quot;https://hexo.io/docs/troubleshooting.html&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;troubleshooting&lt;/a&gt; or you can ask me on [GitHub]
+    
+    </summary>
+    
+      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+    
+    
+      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+    
+      <category term="Django" scheme="http://yoursite.com/tags/Django/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript</title>
+    <link href="http://yoursite.com/2018/02/07/1/"/>
+    <id>http://yoursite.com/2018/02/07/1/</id>
+    <published>2018-02-07T03:24:10.000Z</published>
+    <updated>2018-02-07T03:27:22.747Z</updated>
+    
+    <content type="html"><![CDATA[<p>JavaScript 注释可用于提高代码的可读性。</p><p>JavaScript 注释<br>JavaScript 不会执行注释。</p><p>我们可以添加注释来对 JavaScript 进行解释，或者提高代码的可读性。</p><p>单行注释以 // 开头。</p><p>例子<br>下面的例子使用单行注释来解释代码：</p><p>// 输出标题：<br>document.getElementById(“myH1”).innerHTML=”Welcome to my Homepage”;<br>// 输出段落：<br>document.getElementById(“myP”).innerHTML=”This is my first paragraph.”;</p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;p&gt;JavaScript 注释可用于提高代码的可读性。&lt;/p&gt;
+&lt;p&gt;JavaScript 注释&lt;br&gt;JavaScript 不会执行注释。&lt;/p&gt;
+&lt;p&gt;我们可以添加注释来对 JavaScript 进行解释，或者提高代码的可读性。&lt;/p&gt;
+&lt;p&gt;单行注释以 // 开头。&lt;/p
+      
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
