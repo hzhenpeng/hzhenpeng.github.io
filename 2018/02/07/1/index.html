@@ -113,10 +113,12 @@
 <meta property="og:site_name" content="pangolin">
 <meta property="og:description" content="现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-07T17:46:53.317Z">
+<meta property="og:image" content="https://i.imgur.com/rdLOOvu.jpg">
+<meta property="og:updated_time" content="2018-02-09T06:27:32.830Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="使用Nginx过滤网络爬虫">
 <meta name="twitter:description" content="现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。">
+<meta name="twitter:image" content="https://i.imgur.com/rdLOOvu.jpg">
 
 
 
@@ -420,7 +422,7 @@
       
 
       
-        <p>现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。<br><a id="more"></a><br>其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求：</p>
+        <p><img src="https://i.imgur.com/rdLOOvu.jpg" alt=""><br>现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。<br><a id="more"></a><br>其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求：</p>
 <pre><code>...
 location / {
     if ($http_user_agent ~* &quot;python|curl|java|wget|httpclient|okhttp&quot;) {
@@ -451,7 +453,7 @@ location / {
   <p><span>本文标题:</span><a href="/2018/02/07/1/">使用Nginx过滤网络爬虫</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 pangolin 的个人博客">pangolin</a></p>
   <p><span>发布时间:</span>2018年02月07日 - 11:02</p>
-  <p><span>最后更新:</span>2018年02月08日 - 01:02</p>
+  <p><span>最后更新:</span>2018年02月09日 - 14:02</p>
   <p><span>原始链接:</span><a href="/2018/02/07/1/" title="使用Nginx过滤网络爬虫">http://yoursite.com/2018/02/07/1/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/02/07/1/"  aria-label="复制成功！"></i></span>
   </p>
@@ -713,6 +715,30 @@ location / {
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
                 
+                  <span class="links-of-author-item">
+                    <a href="https://twitter.com/yourname" target="_blank" title="Twitter">
+                      
+                        <i class="fa fa-fw fa-twitter"></i>Twitter</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://weibo.com/your-user-name" target="_blank" title="微博">
+                      
+                        <i class="fa fa-fw fa-weibo"></i>微博</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://douban.com/people/your-user-name" target="_blank" title="豆瓣">
+                      
+                        <i class="fa fa-fw fa-globe"></i>豆瓣</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="http://www.zhihu.com/people/your-user-name" target="_blank" title="知乎">
+                      
+                        <i class="fa fa-fw fa-globe"></i>知乎</a>
+                  </span>
+                
             </div>
           
 
@@ -785,6 +811,35 @@ location / {
   <div class="powered-by"></div>
   <span class="post-count">全站共265字</span>
 </div>
+
+<span>   |   </span>
+<span id="showDays"></span>
+
+<script>
+  var seconds = 1000;
+  var minutes = seconds * 60;
+  var hours = minutes * 60;
+  var days = hours * 24;
+  var years = days * 365;
+  var birthDay = Date.UTC(2016,07,30,00,00,00); // 这里设置建站时间
+  setInterval(function() {
+    var today = new Date();
+    var todayYear = today.getFullYear();
+    var todayMonth = today.getMonth()+1;
+    var todayDate = today.getDate();
+    var todayHour = today.getHours();
+    var todayMinute = today.getMinutes();
+    var todaySecond = today.getSeconds();
+    var now = Date.UTC(todayYear,todayMonth,todayDate,todayHour,todayMinute,todaySecond);
+    var diff = now - birthDay;
+    var diffYears = Math.floor(diff/years);
+    var diffDays = Math.floor((diff/days)-diffYears*365);
+    var diffHours = Math.floor((diff-(diffYears*365+diffDays)*days)/hours);
+    var diffMinutes = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours)/minutes);
+    var diffSeconds = Math.floor((diff-(diffYears*365+diffDays)*days-diffHours*hours-diffMinutes*minutes)/seconds);
+      document.getElementById('showDays').innerHTML="本站已运行 "+diffYears+" 年 "+diffDays+" 天 "+diffHours+" 小时 "+diffMinutes+" 分钟 "+diffSeconds+" 秒";
+  }, 1000);
+</script>
 
 <!--
 

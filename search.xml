@@ -36,7 +36,7 @@
     <entry>
       <title><![CDATA[使用Nginx过滤网络爬虫]]></title>
       <url>/2018/02/07/1/</url>
-      <content type="html"><![CDATA[<p>现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。<br><a id="more"></a><br>其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求：</p>
+      <content type="html"><![CDATA[<p><img src="https://i.imgur.com/rdLOOvu.jpg" alt=""><br>现在的网络爬虫越来越多，有很多爬虫都是初学者写的，和搜索引擎的爬虫不一样，他们不懂如何控制速度，结果往往大量消耗服务器资源，导致带宽白白浪费了。<br><a id="more"></a><br>其实Nginx可以非常容易地根据User-Agent过滤请求，我们只需要在需要URL入口位置通过一个简单的正则表达式就可以过滤不符合要求的爬虫请求：</p>
 <pre><code>...
 location / {
     if ($http_user_agent ~* &quot;python|curl|java|wget|httpclient|okhttp&quot;) {
