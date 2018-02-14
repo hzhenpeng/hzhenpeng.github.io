@@ -113,7 +113,7 @@
 <meta property="og:site_name" content="pangolin">
 <meta property="og:description" content="一直想给自己搭建的博客添加分享功能，google上首先是找到了使用shareSDK的分享功能，在实践的过程中发现添加shareSDK时步骤比较多，添加完成后效果比较丑（一个长条的浅蓝色按钮），而且点击后想要退出分享比较麻烦,它的取消按钮在页面最下方的位置，呈现浅灰色，实在是太难找了，这个设计太反人类了，所以决定放弃它了。在next主题的官方的文档中发现了最新版的next自身集成了百度分享的功能，所">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-02-09T16:14:31.034Z">
+<meta property="og:updated_time" content="2018-02-14T18:09:26.393Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="next主题为博客添加分享功能失效解决办法">
 <meta name="twitter:description" content="一直想给自己搭建的博客添加分享功能，google上首先是找到了使用shareSDK的分享功能，在实践的过程中发现添加shareSDK时步骤比较多，添加完成后效果比较丑（一个长条的浅蓝色按钮），而且点击后想要退出分享比较麻烦,它的取消按钮在页面最下方的位置，呈现浅灰色，实在是太难找了，这个设计太反人类了，所以决定放弃它了。在next主题的官方的文档中发现了最新版的next自身集成了百度分享的功能，所">
@@ -126,7 +126,7 @@
     root: '/',
     scheme: 'Mist',
     version: '5.1.4',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":true,"onmobile":false},
     fancybox: true,
     tabs: true,
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
@@ -358,7 +358,19 @@
             
 
             
+              <span class="post-meta-divider">|</span>
+            
 
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-check-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">更新于&#58;</span>
+              
+              <time title="更新于" itemprop="dateModified" datetime="2018-02-15T02:09:26+08:00">
+                2018-02-15
+              </time>
             
           </span>
 
@@ -421,13 +433,14 @@
 
       
         <p>一直想给自己搭建的博客添加分享功能，google上首先是找到了使用shareSDK的分享功能，在实践的过程中发现添加shareSDK时步骤比较多，添加完成后效果比较丑（一个长条的浅蓝色按钮），而且点击后想要退出分享比较麻烦,它的取消按钮在页面最下方的位置，呈现浅灰色，实在是太难找了，这个设计太反人类了，所以决定放弃它了。在next主题的官方的文档中发现了最新版的next自身集成了百度分享的功能，所以决定采用百度分享了。<br><a id="more"></a></p>
-<h1 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h1><p>根据官方文档的说法，只需要添加/修改主题配置文件中的字段 baidushare值为 true，即可。<a href="http://theme-next.iissnan.com/third-party-services.html" title="官方文档 " target="_blank" rel="noopener">官方文档</a><br>但是我自己按照官方文档改了配置文件之后发现并没有出现分享功能，下面是我的主题配置文件的部分代码<br>`   # Baidu Share</p>
-<pre><code># Available value:
+<h1 id="解决思路"><a href="#解决思路" class="headerlink" title="解决思路"></a>解决思路</h1><p>根据官方文档的说法，只需要添加/修改主题配置文件中的字段 baidushare值为 true，即可。<a href="http://theme-next.iissnan.com/third-party-services.html" title="官方文档 " target="_blank" rel="noopener">官方文档</a><br>但是我自己按照官方文档改了配置文件之后发现并没有出现分享功能，下面是我的主题配置文件的部分代码</p>
+<pre><code># Baidu Share
+# Available value:
 #   button | slide
 # Warning: Baidu Share does not support https.
 #baidushare:
   #type: button
-  baidushare: true`
+  baidushare: true
 </code></pre><p>网上找了好久都没找到什么靠谱的解决办法，没办法，只能去来分析源代码，从源代码找找问题出在哪<br>由于hexo本身是使用node.js将Markdown渲染成静态页面，所以百度分享的相关代码必然会出现在HTML页面中，我们通过查看生成的HTML发现并没有对应的分享的代码，也就是说配置并没有启用。现在初步估计问题应该是出现在Markdown转化为HTML的过程中。<br>hexo中文章使用的模板是主题目录中的layout/post.swig文件，文件中关于分享功能的代码大致出现在第16行</p>
 <pre><code>&lt;div class=&quot;post-spread&quot;&gt;
   {% if theme.jiathis %}
@@ -441,9 +454,7 @@
       {% endif %}
 &lt;/div&gt;
 </code></pre><p>从代码上看，next主题支持许多中分享方式。它会先判断配置文件中对应的配置打开与否执行相应的代码，其中theme代表的是主题的配置文件。 </p>
-<ul>
-<li>ps:当时我在配置sharesdk的时候发现只有注释掉其他的分享功能才能正常启用sharesdk，从代码上来看如果其他的打开了，根本就不会加载sharesdk的配置文件，要正常使用sharesdk的分享功能，要么修改判断的顺序，要么在配置文件中注释掉其他的分享功能 *<br>百度分享功能加载的是文件配置文件目录下的_partials/share/baidushare.swig,打开该文件：</li>
-</ul>
+<p>ps:当时我在配置sharesdk的时候发现只有注释掉其他的分享功能才能正常启用sharesdk，从代码上来看如果其他的打开了，根本就不会加载sharesdk的配置文件，要正常使用sharesdk的分享功能，要么修改判断的顺序，要么在配置文件中注释掉其他的分享功能<br>百度分享功能加载的是文件配置文件目录下的_partials/share/baidushare.swig,打开该文件：</p>
 <pre><code>&lt;div class=&quot;bdsharebuttonbox&quot;&gt;
     &lt;a href=&quot;#&quot; class=&quot;bds_copy&quot; data-cmd=&quot;copy&quot; title=&quot;复制网址&quot;&gt;&lt;/a&gt;
     &lt;a href=&quot;#&quot; class=&quot;bds_weixin&quot; data-cmd=&quot;weixin&quot; title=&quot;分享到微信&quot;&gt;&lt;/a&gt;
@@ -484,7 +495,7 @@
   <p><span>本文标题:</span><a href="/2018/02/07/1/">next主题为博客添加分享功能失效解决办法</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 pangolin 的个人博客">pangolin</a></p>
   <p><span>发布时间:</span>2018年02月07日 - 11:02</p>
-  <p><span>最后更新:</span>2018年02月10日 - 00:02</p>
+  <p><span>最后更新:</span>2018年02月15日 - 02:02</p>
   <p><span>原始链接:</span><a href="/2018/02/07/1/" title="next主题为博客添加分享功能失效解决办法">http://yoursite.com/2018/02/07/1/</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="http://yoursite.com/2018/02/07/1/"  aria-label="复制成功！"></i></span>
   </p>
@@ -934,6 +945,8 @@
     
       <div class="back-to-top">
         <i class="fa fa-arrow-up"></i>
+        
+          <span id="scrollpercent"><span>0</span>%</span>
         
       </div>
     
