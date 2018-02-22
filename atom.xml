@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="https://hzhenpeng.github.io/"/>
   <updated>2018-02-22T01:18:06.154Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>https://hzhenpeng.github.io/</id>
   
   <author>
     <name>荼蘼</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>百度分享不支持https的解决方案</title>
-    <link href="http://yoursite.com/2018/02/16/baidushare-https/"/>
-    <id>http://yoursite.com/2018/02/16/baidushare-https/</id>
+    <link href="https://hzhenpeng.github.io/baidushare-https.html"/>
+    <id>https://hzhenpeng.github.io/baidushare-https.html</id>
     <published>2018-02-15T17:27:51.000Z</published>
     <updated>2018-02-22T01:18:06.154Z</updated>
     
@@ -38,8 +38,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2018/02/08/hello-world/"/>
-    <id>http://yoursite.com/2018/02/08/hello-world/</id>
+    <link href="https://hzhenpeng.github.io/hello-world.html"/>
+    <id>https://hzhenpeng.github.io/hello-world.html</id>
     <published>2018-02-07T16:37:00.000Z</published>
     <updated>2018-02-08T16:29:42.237Z</updated>
     
@@ -51,19 +51,19 @@
     
     </summary>
     
-      <category term="Python" scheme="http://yoursite.com/categories/Python/"/>
+      <category term="Python" scheme="https://hzhenpeng.github.io/categories/Python/"/>
     
     
-      <category term="Python" scheme="http://yoursite.com/tags/Python/"/>
+      <category term="Python" scheme="https://hzhenpeng.github.io/tags/Python/"/>
     
-      <category term="Django" scheme="http://yoursite.com/tags/Django/"/>
+      <category term="Django" scheme="https://hzhenpeng.github.io/tags/Django/"/>
     
   </entry>
   
   <entry>
     <title>next主题为博客添加分享功能失效解决办法</title>
-    <link href="http://yoursite.com/2018/02/07/1/"/>
-    <id>http://yoursite.com/2018/02/07/1/</id>
+    <link href="https://hzhenpeng.github.io/1.html"/>
+    <id>https://hzhenpeng.github.io/1.html</id>
     <published>2018-02-07T03:24:10.000Z</published>
     <updated>2018-02-15T11:35:47.925Z</updated>
     
