@@ -5,13 +5,30 @@
     
   <url>
     <loc>https://hzhenpeng.github.io/over-wall.html</loc>
-    <lastmod>2018-02-26T02:05:33.463Z</lastmod>
+    <lastmod>2018-02-26T03:51:17.950Z</lastmod>
     <data>
         <display>
         <title>windows全局翻墙</title>
         <pubTime>2018-02-23T06:21:16.000Z</pubTime>
         
-        <tag>over-wall</tag>
+        <tag>翻墙</tag>
+         
+         
+           
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://hzhenpeng.github.io/hexo-ssh.html</loc>
+    <lastmod>2018-02-26T03:51:00.879Z</lastmod>
+    <data>
+        <display>
+        <title>hexo d上传到github出错的解决办法</title>
+        <pubTime>2018-02-26T03:17:16.000Z</pubTime>
+        
+        <tag>hexo</tag>
          
          
            
