@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://hzhenpeng.github.io/"/>
-  <updated>2018-02-23T07:45:33.834Z</updated>
+  <updated>2018-02-26T02:05:33.463Z</updated>
   <id>https://hzhenpeng.github.io/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="https://hzhenpeng.github.io/over-wall.html"/>
     <id>https://hzhenpeng.github.io/over-wall.html</id>
     <published>2018-02-23T06:21:16.000Z</published>
-    <updated>2018-02-23T07:45:33.834Z</updated>
+    <updated>2018-02-26T02:05:33.463Z</updated>
     
     <content type="html"><![CDATA[<hr><h1 id="软件下载地址"><a href="#软件下载地址" class="headerlink" title="软件下载地址:"></a>软件下载地址:</h1><hr><p><a href="https://github.com/shadowsocks/shadowsocks-windows/releases" title="https://github.com/shadowsocks/shadowsocks-windows/releases" target="_blank" rel="noopener">shadowsocks</a><br><a href="https://www.proxifier.com/" title="https://www.proxifier.com/" target="_blank" rel="noopener">proxifier官网</a><br><a id="more"></a></p><hr><h1 id="帐号-注册码-破解"><a href="#帐号-注册码-破解" class="headerlink" title="帐号/注册码/破解"></a>帐号/注册码/破解</h1><p>proxifier注册码:<br><figure class="highlight lisp"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">L6Z8A-XY2J4-BTZ3P-ZZ7DF-A2Q9C (<span class="name">Portable</span> Edition)</span><br><span class="line"><span class="number">5</span>EZ8G-C3WL5-B56YG-SCXM9-6QZAP (<span class="name">Standard</span> Edition)</span><br><span class="line">P427L-9Y552-5433E-8DSR3-58Z68 (<span class="name">MAC</span>)</span><br></pre></td></tr></table></figure></p><hr><h1 id="配置"><a href="#配置" class="headerlink" title="配置"></a>配置</h1><h2 id="shadowsocks配置"><a href="#shadowsocks配置" class="headerlink" title="shadowsocks配置:"></a>shadowsocks配置:</h2><p><img src="http://oxz42jl1a.bkt.clouddn.com/blog/180223/kICKKbEfkF.png?imageslim" alt="mark"></p><h2 id="proxifier配置："><a href="#proxifier配置：" class="headerlink" title="proxifier配置："></a>proxifier配置：</h2><p><img src="http://oxz42jl1a.bkt.clouddn.com/blog/180223/8K59Ghla9h.png?imageslim" alt="mark"><br><img src="http://oxz42jl1a.bkt.clouddn.com/blog/180223/4Hk04BC8mm.png?imageslim" alt="mark"><br><img src="http://oxz42jl1a.bkt.clouddn.com/blog/180223/c1k0l0kl6L.png?imageslim" alt="mark"><br><img src="http://oxz42jl1a.bkt.clouddn.com/blog/180223/0EE3jLE7D2.png?imageslim" alt="mark"><br><img src="http://oxz42jl1a.bkt.clouddn.com/blog/180223/BDlDl3e3bk.png?imageslim" alt="mark"><br><img src="http://oxz42jl1a.bkt.clouddn.com/blog/180223/mgml0d1bF4.png?imageslim" alt="mark"><br><img src="http://oxz42jl1a.bkt.clouddn.com/blog/180223/iEciC63E3I.png?imageslim" alt="mark"></p><h1 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h1><ol><li>Proxifier代理规则中必须把你的 shadowsocks客户端设置成direct</li><li>Proxifier中名称解析(即DNS解析) 必须设置成 通过代理解析主机地址 (否则会出现依然无法访问谷歌等问题)</li></ol><h1 id="参考文档"><a href="#参考文档" class="headerlink" title="参考文档"></a>参考文档</h1><p><a href="https://blog.xinshangshangxin.com/2016/04/09/windows-bypass-firewall/" target="_blank" rel="noopener">https://blog.xinshangshangxin.com/2016/04/09/windows-bypass-firewall/</a></p>]]></content>
     
@@ -34,7 +34,7 @@
     </summary>
     
     
-      <category term="翻墙" scheme="https://hzhenpeng.github.io/tags/%E7%BF%BB%E5%A2%99/"/>
+      <category term="over-wall" scheme="https://hzhenpeng.github.io/tags/over-wall/"/>
     
   </entry>
   
