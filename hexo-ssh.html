@@ -94,7 +94,7 @@
 
 
 
-  <meta name="keywords" content="hexo," />
+  <meta name="keywords" content="Hexo," />
 
 
 
@@ -107,20 +107,20 @@
 
 
 
-<meta name="description" content="问题描述按照hexo官网的 deployment 的流程，执行 hexo d 的时候一直出现fatal: could not read Username for ‘https://github.com‘: No error的错误。。。之前博客还是可以正常执行的，但是这次突然就出问题了。问题的描述截图如下：网上查了很多资料，有人说是_config.yml文件格式问题，然后我按照yml格式要求严格书写">
-<meta name="keywords" content="hexo">
+<meta name="description" content="问题描述按照hexo官网的 deployment 的流程，执行 hexo d 的时候一直出现fatal: could not read Username for ‘https://github.com‘: No error的错误。。。之前博客还是可以正常执行的，但是这次突然就出问题了。问题的描述截图如下：">
+<meta name="keywords" content="Hexo">
 <meta property="og:type" content="article">
 <meta property="og:title" content="hexo d上传到github出错的解决办法">
 <meta property="og:url" content="https://hzhenpeng.github.io/hexo-ssh.html">
 <meta property="og:site_name" content="荼蘼">
-<meta property="og:description" content="问题描述按照hexo官网的 deployment 的流程，执行 hexo d 的时候一直出现fatal: could not read Username for ‘https://github.com‘: No error的错误。。。之前博客还是可以正常执行的，但是这次突然就出问题了。问题的描述截图如下：网上查了很多资料，有人说是_config.yml文件格式问题，然后我按照yml格式要求严格书写">
+<meta property="og:description" content="问题描述按照hexo官网的 deployment 的流程，执行 hexo d 的时候一直出现fatal: could not read Username for ‘https://github.com‘: No error的错误。。。之前博客还是可以正常执行的，但是这次突然就出问题了。问题的描述截图如下：">
 <meta property="og:locale" content="zh-Hans">
 <meta property="og:image" content="http://oxz42jl1a.bkt.clouddn.com/blog/180226/LDkhHAIdDc.png?imageslim">
 <meta property="og:image" content="http://oxz42jl1a.bkt.clouddn.com/blog/180226/Fkb8fh8g12.png?imageslim">
-<meta property="og:updated_time" content="2018-02-26T03:51:00.879Z">
+<meta property="og:updated_time" content="2018-02-26T06:51:38.783Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="hexo d上传到github出错的解决办法">
-<meta name="twitter:description" content="问题描述按照hexo官网的 deployment 的流程，执行 hexo d 的时候一直出现fatal: could not read Username for ‘https://github.com‘: No error的错误。。。之前博客还是可以正常执行的，但是这次突然就出问题了。问题的描述截图如下：网上查了很多资料，有人说是_config.yml文件格式问题，然后我按照yml格式要求严格书写">
+<meta name="twitter:description" content="问题描述按照hexo官网的 deployment 的流程，执行 hexo d 的时候一直出现fatal: could not read Username for ‘https://github.com‘: No error的错误。。。之前博客还是可以正常执行的，但是这次突然就出问题了。问题的描述截图如下：">
 <meta name="twitter:image" content="http://oxz42jl1a.bkt.clouddn.com/blog/180226/LDkhHAIdDc.png?imageslim">
 
 
@@ -373,12 +373,34 @@
               
                 <span class="post-meta-item-text">更新于&#58;</span>
               
-              <time title="更新于" itemprop="dateModified" datetime="2018-02-26T11:51:00+08:00">
+              <time title="更新于" itemprop="dateModified" datetime="2018-02-26T14:51:38+08:00">
                 2018-02-26
               </time>
             
           </span>
 
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Hexo/" itemprop="url" rel="index">
+                    <span itemprop="name">Hexo</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
           
 
           
@@ -412,7 +434,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  997
+                  1,031
                 </span>
               
 
@@ -437,17 +459,20 @@
       
 
       
-        <h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>按照hexo官网的 deployment 的流程，执行 hexo d 的时候一直出现fatal: could not read Username for ‘<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a>‘: No error的错误。。。之前博客还是可以正常执行的，但是这次突然就出问题了。问题的描述截图如下：<br><img src="http://oxz42jl1a.bkt.clouddn.com/blog/180226/LDkhHAIdDc.png?imageslim" alt="mark"><br>网上查了很多资料，有人说是_config.yml文件格式问题，然后我按照yml格式要求严格书写了一遍，还是不行。然后在SegmentFault上看到使用ssh方式代替https方式上传，自己亲自尝试了一下，成功解决了这个问题。在配置ssh的时候我设置免密deploy。</p>
+        <h1 id="问题描述"><a href="#问题描述" class="headerlink" title="问题描述"></a>问题描述</h1><p>按照hexo官网的 deployment 的流程，执行 hexo d 的时候一直出现fatal: could not read Username for ‘<a href="https://github.com" target="_blank" rel="noopener">https://github.com</a>‘: No error的错误。。。之前博客还是可以正常执行的，但是这次突然就出问题了。问题的描述截图如下：<br><img src="http://oxz42jl1a.bkt.clouddn.com/blog/180226/LDkhHAIdDc.png?imageslim" alt="mark"><br><a id="more"></a><br>网上查了很多资料，有人说是_config.yml文件格式问题，然后我按照yml格式要求严格书写了一遍，还是不行。然后在SegmentFault上看到使用ssh方式代替https方式上传，自己亲自尝试了一下，成功解决了这个问题。在配置ssh的时候我设置免密deploy。</p>
 <h1 id="设置-SSH-使用-hexo-deploy-时免输用户名密码"><a href="#设置-SSH-使用-hexo-deploy-时免输用户名密码" class="headerlink" title="设置 SSH 使用 hexo deploy 时免输用户名密码"></a>设置 SSH 使用 hexo deploy 时免输用户名密码</h1><p>我使用的 hexo 版本是v3.5.0。一开始按照网上的一些教程来设置的时候并没有成功，SSH 需要验证，就是我们键入命令 hexo deploy 以后，当那些需要提交的内容显示完成过后会提示我们输入用户名、密码。我参考了网上的一些教程，现在给出完整可行的设置 SSH 使用 hexo deploy 时免输用户名密码的教程！</p>
 <h2 id="生成-SSH-密钥"><a href="#生成-SSH-密钥" class="headerlink" title="生成 SSH 密钥"></a>生成 SSH 密钥</h2><p>首先打开命令行工具，通常我们可以直接右键鼠标任意位置打开 Git Bash Here，然后输入命令cd ~/.ssh，检查”.ssh”目录是否在你的用户目录中，然后在本地计算机生成密钥：<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">$  ssh-keygen -t rsa -C <span class="string">"hzhenpeng666@163.com"</span></span><br><span class="line">Generating <span class="keyword">public</span>/<span class="keyword">private</span> rsa key pair.</span><br><span class="line">Enter file <span class="keyword">in</span> which to save the key (<span class="regexp">/c/</span>Users<span class="regexp">/huangzhenpeng/</span>.ssh/id_rsa):</span><br><span class="line">Enter passphrase (empty <span class="keyword">for</span> no passphrase):</span><br><span class="line">Enter same passphrase <span class="string">again:</span></span><br></pre></td></tr></table></figure></p>
 <p>使用默认的文件名直接enter，使用默认的密码（空）直接enter，密钥生成成功<br><figure class="highlight groovy"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">Your identification has been saved <span class="keyword">in</span> <span class="regexp">/home/</span>you<span class="regexp">/.ssh/</span>id_rsa.</span><br><span class="line">Your <span class="keyword">public</span> key has been saved <span class="keyword">in</span> <span class="regexp">/home/</span>you<span class="regexp">/.ssh/</span>id_rsa.pub.</span><br><span class="line">The key fingerprint <span class="string">is:</span></span><br><span class="line">…………………此处是密钥内容…………………… your_email<span class="meta">@example</span>.com</span><br></pre></td></tr></table></figure></p>
-<h2 id="设置-Github-项目的-Deploy-keys"><a href="#设置-Github-项目的-Deploy-keys" class="headerlink" title="设置 Github 项目的 Deploy keys"></a>设置 Github 项目的 Deploy keys</h2><p>可以选择在用户设置中添加密钥（Settings –&gt; SSH GPG keys）还是单个项目中添加密钥，在这里我就在我们的博客项目中添加密钥，此处以我的博客为例。<br>在自己的github的首页菜单栏中点击 Settings –&gt; Deploy keys –&gt; Add deploy key，然后将生成的 id_rsa.pub 中的内容全选复制到 key 输入框中，然后点击 Add key 完成添加公钥。<br><img src="http://oxz42jl1a.bkt.clouddn.com/blog/180226/Fkb8fh8g12.png?imageslim" alt="mark"><br>接下来测试配置是否成功<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>ssh -T git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure></p>
-<p>如果出现以下内容即表示配置完成并且成功！<br><figure class="highlight irpf90"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Hi username<span class="comment">! You've successfully authenticated, but GitHub does not</span></span><br><span class="line"><span class="keyword">provide</span> shell <span class="keyword">access</span>.</span><br></pre></td></tr></table></figure></p>
+<h2 id="设置-Github-项目的-Deploy-keys"><a href="#设置-Github-项目的-Deploy-keys" class="headerlink" title="设置 Github 项目的 Deploy keys"></a>设置 Github 项目的 Deploy keys</h2><p>可以选择在用户设置中添加密钥（Settings –&gt; SSH GPG keys）还是单个项目中添加密钥，在这里我就在我们的博客项目中添加密钥，此处以我的博客为例。<br>在自己的github的首页菜单栏中点击 Settings –&gt; Deploy keys –&gt; Add deploy key，然后将生成的 id_rsa.pub 中的内容全选复制到 key 输入框中，然后点击 Add key 完成添加公钥。<br><img src="http://oxz42jl1a.bkt.clouddn.com/blog/180226/Fkb8fh8g12.png?imageslim" alt="mark"></p>
+<p><strong>注意，这里要勾选Allow write access，否则后面会出错！</strong></p>
+<p>接下来测试配置是否成功<br><figure class="highlight elixir"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$ </span>ssh -T git<span class="variable">@github</span>.com</span><br></pre></td></tr></table></figure></p>
+<p>如果出现以下内容即表示配置完成并且成功！<br><figure class="highlight ada"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">Hi username! You<span class="symbol">'ve</span> successfully authenticated, but GitHub does <span class="keyword">not</span></span><br><span class="line">provide shell <span class="keyword">access</span>.</span><br></pre></td></tr></table></figure></p>
 <h2 id="设置博客的提交地址"><a href="#设置博客的提交地址" class="headerlink" title="设置博客的提交地址"></a>设置博客的提交地址</h2><p>到了这一个步骤和大家在网上搜到的其他教程就不一样了，网上大多数教程这一步的设置<br><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash"> 切入到包含 .git 文件夹的文件夹</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> .deploy/</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> 查看当前的传输协议</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote -v</span></span><br><span class="line">origin  https://github.com/USERNAME/REPOSITORY.git (fetch)</span><br><span class="line">origin  https://github.com/USERNAME/REPOSITORY.git (push)</span><br><span class="line"><span class="meta">#</span><span class="bash"> 修改 https 协议为 ssh 协议</span></span><br><span class="line"><span class="meta">$</span><span class="bash"> git remote <span class="built_in">set</span>-url origin git@github.com:USERNAME/REPOSITORY2.git</span></span><br></pre></td></tr></table></figure></p>
 <p>但是我根据网上的并没有用，而且我的 blog 文件夹中包含 .git 文件夹的文件夹名字是 .deploy_git，不是.deploy。还有我输入 $ git remote -v 时的显示结果为空，我尝试过自己添加 $ git remote add origin git@github.com:username/username.github.io.git,然后 $ hexo deploy 还是需要输入密码。<br>在 hexo deploy 的控制台输出结果中我看到了链接仍然是 https 的链接，这时我想到了 hexo 的配置文件 _config.yml 中的 deploy 属性。</p>
 <p>解决办法就是<br><figure class="highlight less"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">deploy</span>:</span><br><span class="line">  <span class="attribute">type</span>: git</span><br><span class="line">  <span class="attribute">repository</span>: git<span class="variable">@github</span>.<span class="attribute">com</span>:username/username.github.io.git</span><br><span class="line">  <span class="attribute">branch</span>: master</span><br></pre></td></tr></table></figure></p>
 <p>我将其中的 repository修改成了git@github.com:username/username.github.io.git，这个时候我再尝试了 $ hexo deploy 果然成功了，就不用输入密码了！之前hexo deploy的出错问题也解决了，并且用ssh方式代替了https方式。</p>
 <p>到此我的解决方法已经完成了，希望能帮大家！</p>
+<p><em>参考文章：<a href="http://chengjianhua.github.io/2016/05/14/hexo-deploy-without-pw-by-ssh/" target="_blank" rel="noopener">http://chengjianhua.github.io/2016/05/14/hexo-deploy-without-pw-by-ssh/</a></em></p>
 
       
     </div>
@@ -468,7 +493,7 @@
   <p><span>本文标题:</span><a href="/hexo-ssh.html">hexo d上传到github出错的解决办法</a></p>
   <p><span>文章作者:</span><a href="/" title="访问 荼蘼 的个人博客">荼蘼</a></p>
   <p><span>发布时间:</span>2018年02月26日 - 11:02</p>
-  <p><span>最后更新:</span>2018年02月26日 - 11:02</p>
+  <p><span>最后更新:</span>2018年02月26日 - 14:02</p>
   <p><span>原始链接:</span><a href="/hexo-ssh.html" title="hexo d上传到github出错的解决办法">https://hzhenpeng.github.io/hexo-ssh.html</a>
     <span class="copy-path"  title="点击复制文章链接"><i class="fa fa-clipboard" data-clipboard-text="https://hzhenpeng.github.io/hexo-ssh.html"  aria-label="复制成功！"></i></span>
   </p>
@@ -544,7 +569,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i>  hexo</a>
+            <a href="/tags/Hexo/" rel="tag"><i class="fa fa-tag"></i>  Hexo</a>
           
         </div>
       
@@ -713,7 +738,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">5</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -788,6 +813,10 @@
                 
                   <li class="links-of-blogroll-item">
                     <a href="https://www.dingxuewen.com/" title="LeviDing" target="_blank">LeviDing</a>
+                  </li>
+                
+                  <li class="links-of-blogroll-item">
+                    <a href="http://laker.me/blog/" title="laker" target="_blank">laker</a>
                   </li>
                 
               </ul>
